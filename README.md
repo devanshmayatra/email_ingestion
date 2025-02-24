@@ -38,6 +38,7 @@ email-pdf-reader-app/
 │   ├── pages/
 │   │   ├── index.tsx           # Main UI for configuring emails
 │-- .env                        # Environment variables
+|-- pdfs
 │-- README.md                   # Documentation
 │-- package.json                # Project dependencies
 │-- tsconfig.json                # TypeScript configuration
