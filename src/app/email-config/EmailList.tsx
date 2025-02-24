@@ -35,8 +35,8 @@ export default function EmailList({ configs, onConfigUpdated }: { configs: any[]
               <p><strong>{config.emailAddress}</strong></p>
               <p className="text-sm text-gray-500">{config.connectionType} - {config.host}:{config.port}</p>
             </div>
-            <button onClick={() => handleDelete(config.id)} className="text-red-500">Delete</button>
-            <button onClick={()=>fetchEmails(config)} className="btn btn-primary">Check Inbox</button>
+            <button onClick={() => handleDelete(config.id)} className="text-red-500 rounded-md px-2 border-black border-2">Delete</button>
+            <button onClick={()=>fetchEmails(config)} className="btn btn-primary rounded-md px-2 border-black border-2">Check Inbox</button>
           </li>
         ))}
       </ul>
