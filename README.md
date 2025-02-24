@@ -1,7 +1,7 @@
 Email & PDF Ingestion App
 
 📌 Project Overview
-This application allows users to configure email accounts (IMAP, Gmail API, Outlook/Graph API) and automatically retrieve emails with PDF attachments. It stores email metadata in a PostgreSQL database using Prisma and downloads PDFs to a local folder.
+This application allows users to configure email accounts (IMAP) and automatically retrieve emails with PDF attachments. It stores email metadata in a PostgreSQL database using Prisma and downloads PDFs to a local folder.
 
 ---
 
