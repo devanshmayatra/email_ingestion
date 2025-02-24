@@ -53,7 +53,7 @@ export default function EmailForm({ onConfigAdded }: { onConfigAdded: () => void
         <option value="IMAP">IMAP</option>
       </select>
       <input type="text" name="username" placeholder="Username" className=" h-10 border-black border-2 rounded-md pl-2 input" value={formData.username} onChange={handleChange} />
-      <input type="password" name="password" placeholder="Password" className=" h-10 border-black border-2 rounded-md pl-2 input" value={formData.password} onChange={handleChange} />
+      <input type="password" name="password" placeholder="App Password" className=" h-10 border-black border-2 rounded-md pl-2 input" value={formData.password} onChange={handleChange} />
       <input type="text" name="host" placeholder="Host | eg. imap.gmail.com" className=" h-10 border-black border-2 rounded-md pl-2 input" value={formData.host} onChange={handleChange} />
       <input type="number" name="port" placeholder="Port | 993" className=" h-10 border-black border-2 rounded-md pl-2 input" value={formData.port} onChange={handleChange} />
       <button type="submit" className="btn border-2 px-2 py-1 border-black rounded-md">Save Configuration</button>
