@@ -7,7 +7,7 @@ This application allows users to configure email accounts (IMAP) and automatical
 
 🚀 Features
 - Configure multiple email accounts
-- Supports Gmail API, Outlook/Graph API, IMAP, and POP3
+- Supports IMAP
 - Automatically fetches emails with PDF attachments
 - Stores email metadata (sender, subject, date, etc.) in PostgreSQL
 - Saves PDFs to a local folder (`./pdfs/`)
