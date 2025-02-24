@@ -92,17 +92,11 @@ The app will be available at `http://localhost:3000`
 - **Manual**: Send an email with a PDF attachment and check if it's saved in `./pdfs/`.
 
 ---
-
-🛠️ Troubleshooting
-**Invalid Credentials (Gmail API)**
-- Ensure **Less Secure Apps** is enabled or use OAuth.
-- Check the **refresh token** and update it if needed.
-
-**IMAP Connection Issues**
+IMAP Connection Issues
 - Ensure IMAP is enabled in Gmail settings.
 - Try adding `tlsOptions: { rejectUnauthorized: false }`.
 
-**Database Not Connecting**
+Database Not Connecting
 - Check `DATABASE_URL` in `.env`.
 - Ensure PostgreSQL is running.
 
@@ -125,5 +119,5 @@ Feel free to open issues and submit PRs!
 
 ---
 
-**Made with ❤️ by Nova** 🚀
+Made By Devansh Mayatra
 
