@@ -25,7 +25,7 @@ export default function EmailList({ configs, onConfigUpdated }: { configs: any[]
   };
 
   return (
-    <div className="mt-6">
+    <div className="mt-6 text-black">
       <h2 className="text-xl font-semibold">Configured Emails</h2>
       {configs.length === 0 ? <p>No configurations found.</p> : null}
       <ul>
@@ -36,10 +36,10 @@ export default function EmailList({ configs, onConfigUpdated }: { configs: any[]
               <p className="text-sm text-gray-500">{config.connectionType} - {config.host}:{config.port}</p>
             </div>
             <button onClick={() => handleDelete(config.id)} className="text-red-500">Delete</button>
-            <button onClick={()=>fetchEmails(config)} className="btn btn-primary">Check Inbox</button>;
+            <button onClick={()=>fetchEmails(config)} className="btn btn-primary">Check Inbox</button>
           </li>
         ))}
       </ul>
     </div>
-  );
+  )
 }

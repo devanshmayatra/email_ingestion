@@ -46,20 +46,17 @@ export default function EmailForm({ onConfigAdded }: { onConfigAdded: () => void
   
 
   return (
-    <form onSubmit={handleSubmit} className="mb-4 bg-gray-100 p-4 rounded">
+    <form onSubmit={handleSubmit} className="mb-4 bg-gray-100 p-4 rounded text-black flex flex-wrap gap-2 " >
       <h2 className="text-xl font-semibold mb-2">Add Email Configuration</h2>
-      <input type="email" name="emailAddress" placeholder="Email Address" className="input" value={formData.emailAddress} onChange={handleChange} required />
-      <select name="connectionType" value={formData.connectionType} onChange={handleChange} className="input">
+      <input type="email" name="emailAddress" placeholder="Email Address" className=" h-10 border-black border-2 rounded-md pl-2 input" value={formData.emailAddress} onChange={handleChange} required />
+      <select name="connectionType" value={formData.connectionType} onChange={handleChange} className=" h-10 border-black border-2 rounded-md pl-2 input">
         <option value="IMAP">IMAP</option>
-        <option value="POP3">POP3</option>
-        <option value="Gmail API">Gmail API</option>
-        <option value="Outlook API">Outlook API</option>
       </select>
-      <input type="text" name="username" placeholder="Username" className="input" value={formData.username} onChange={handleChange} />
-      <input type="password" name="password" placeholder="Password" className="input" value={formData.password} onChange={handleChange} />
-      <input type="text" name="host" placeholder="Host" className="input" value={formData.host} onChange={handleChange} />
-      <input type="number" name="port" placeholder="Port" className="input" value={formData.port} onChange={handleChange} />
-      <button type="submit" className="btn">Save Configuration</button>
+      <input type="text" name="username" placeholder="Username" className=" h-10 border-black border-2 rounded-md pl-2 input" value={formData.username} onChange={handleChange} />
+      <input type="password" name="password" placeholder="Password" className=" h-10 border-black border-2 rounded-md pl-2 input" value={formData.password} onChange={handleChange} />
+      <input type="text" name="host" placeholder="Host | eg. imap.gmail.com" className=" h-10 border-black border-2 rounded-md pl-2 input" value={formData.host} onChange={handleChange} />
+      <input type="number" name="port" placeholder="Port | 993" className=" h-10 border-black border-2 rounded-md pl-2 input" value={formData.port} onChange={handleChange} />
+      <button type="submit" className="btn border-2 px-2 py-1 border-black rounded-md">Save Configuration</button>
     </form>
   );
 }
